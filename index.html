@@ -1,172 +1,171 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Harish Bansode | Full Stack Developer</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Harish Bansode | Portfolio</title>
 
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background: #0f172a;
-            color: #e2e8f0;
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: #0d1117;
+        color: #c9d1d9;
+    }
+
+    .container {
+        display: flex;
+        max-width: 1200px;
+        margin: auto;
+        padding: 20px;
+    }
+
+    /* LEFT PANEL */
+    .left {
+        width: 30%;
+        text-align: center;
+    }
+
+    .profile-img {
+        width: 180px;
+        height: 180px;
+        border-radius: 50%;
+        border: 3px solid #30363d;
+    }
+
+    .name {
+        margin-top: 15px;
+        font-size: 22px;
+        font-weight: bold;
+    }
+
+    .username {
+        color: #8b949e;
+    }
+
+    .btn {
+        margin-top: 15px;
+        padding: 10px 20px;
+        border: 1px solid #30363d;
+        background: transparent;
+        color: #c9d1d9;
+        cursor: pointer;
+        border-radius: 6px;
+    }
+
+    .btn:hover {
+        background: #21262d;
+    }
+
+    .info {
+        margin-top: 20px;
+        font-size: 14px;
+        color: #8b949e;
+    }
+
+    /* RIGHT PANEL */
+    .right {
+        width: 70%;
+        padding-left: 40px;
+    }
+
+    h1 {
+        color: #58a6ff;
+    }
+
+    h2 {
+        border-bottom: 1px solid #30363d;
+        padding-bottom: 5px;
+        margin-top: 30px;
+    }
+
+    ul {
+        padding-left: 20px;
+    }
+
+    li {
+        margin: 8px 0;
+    }
+
+    a {
+        color: #58a6ff;
+        text-decoration: none;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+
+    @media (max-width: 768px) {
+        .container {
+            flex-direction: column;
         }
 
-        header {
-            background: #020617;
-            padding: 20px;
-            text-align: center;
+        .left, .right {
+            width: 100%;
+            padding: 0;
         }
 
-        header h1 {
-            margin: 0;
-            color: #38bdf8;
+        .right {
+            margin-top: 20px;
         }
-
-        nav {
-            text-align: center;
-            margin-top: 10px;
-        }
-
-        nav a {
-            color: #94a3b8;
-            margin: 0 15px;
-            text-decoration: none;
-        }
-
-        nav a:hover {
-            color: #38bdf8;
-        }
-
-        section {
-            padding: 40px;
-            max-width: 900px;
-            margin: auto;
-        }
-
-        h2 {
-            color: #38bdf8;
-        }
-
-        .card {
-            background: #020617;
-            padding: 20px;
-            margin: 15px 0;
-            border-radius: 10px;
-        }
-
-        .skills span {
-            display: inline-block;
-            background: #1e293b;
-            padding: 8px 12px;
-            margin: 5px;
-            border-radius: 5px;
-        }
-
-        footer {
-            text-align: center;
-            padding: 20px;
-            background: #020617;
-            margin-top: 40px;
-        }
-    </style>
+    }
+</style>
 </head>
 
 <body>
 
-<header>
-    <h1>Harish Bansode</h1>
-    <p>Senior Full Stack Developer | MEAN Stack | DevOps | AWS</p>
+<div class="container">
 
-    <nav>
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
-    </nav>
-</header>
+    <!-- LEFT SIDE -->
+    <div class="left">
+        <img src="https://via.placeholder.com/180" class="profile-img" alt="Profile">
 
-<section id="about">
-    <h2>About Me</h2>
-    <div class="card">
-        <p>
-            I am a Full Stack Developer with 10+ years of experience building scalable applications.
-            I specialize in MEAN stack development, cloud deployment, and performance optimization.
-        </p>
-        <p>
-            Currently working on SGUI and NLM applications with strong expertise in backend systems,
-            DevOps pipelines, and cloud infrastructure.
-        </p>
-    </div>
-</section>
+        <div class="name">Harish Bansode</div>
+        <div class="username">@harishbansode</div>
 
-<section id="skills">
-    <h2>Skills</h2>
-    <div class="card skills">
-        <span>Node.js</span>
-        <span>Express.js</span>
-        <span>Angular</span>
-        <span>React</span>
-        <span>TypeScript</span>
-        <span>JavaScript</span>
-        <span>MongoDB</span>
-        <span>Docker</span>
-        <span>AWS</span>
-        <span>NGINX</span>
-        <span>PM2</span>
-        <span>GraphQL</span>
-        <span>RabbitMQ</span>
-    </div>
-</section>
+        <button class="btn">Follow</button>
 
-<section id="projects">
-    <h2>Projects</h2>
-
-    <div class="card">
-        <h3>SGUI Application</h3>
-        <p>
-            Developed UI for TV guide and VOD systems using JavaScript.
-            Integrated TTS features and optimized performance.
-        </p>
+        <div class="info">
+            📍 Pune, India <br>
+            💼 Full Stack Developer <br>
+            ☁️ AWS | DevOps
+        </div>
     </div>
 
-    <div class="card">
-        <h3>NLM Application</h3>
-        <p>
-            MEAN stack application for managing channel logos.
-            Built scalable APIs and UI components.
-        </p>
+    <!-- RIGHT SIDE -->
+    <div class="right">
+
+        <h1>Hi, I'm Harish!</h1>
+        <p><strong>Senior Full Stack Developer, MEAN Stack, Cloud & DevOps Engineer</strong></p>
+
+        <h2>👨‍💻 Software Development Projects</h2>
+        <ul>
+            <li><strong>SGUI Application</strong> – TV Guide & VOD UI, TTS integration, performance optimization</li>
+            <li><strong>NLM Application</strong> – MEAN stack app for channel logo management</li>
+            <li><strong>RoboInvest</strong> – Stock analysis using Python Flask</li>
+            <li><strong>DevOps Setup</strong> – Docker, PM2, CI/CD, AWS deployment</li>
+        </ul>
+
+        <h2>🛠️ Skills</h2>
+        <ul>
+            <li>Node.js, Express.js</li>
+            <li>Angular, React</li>
+            <li>TypeScript, JavaScript</li>
+            <li>MongoDB, NoSQL</li>
+            <li>AWS, Docker, NGINX, PM2</li>
+            <li>GraphQL, RabbitMQ</li>
+        </ul>
+
+        <h2>📫 Contact</h2>
+        <ul>
+            <li>Email: your-email@gmail.com</li>
+            <li>GitHub: <a href="#">https://github.com/your-username</a></li>
+        </ul>
+
     </div>
 
-    <div class="card">
-        <h3>RoboInvest</h3>
-        <p>
-            Stock analysis application using Python Flask and financial APIs.
-        </p>
-    </div>
-
-    <div class="card">
-        <h3>DevOps Setup</h3>
-        <p>
-            Implemented Docker, PM2 clustering, GitHub Actions CI/CD, and AWS deployment.
-        </p>
-    </div>
-
-</section>
-
-<section id="contact">
-    <h2>Contact</h2>
-    <div class="card">
-        <p>Email: your-email@gmail.com</p>
-        <p>GitHub: https://github.com/your-username</p>
-        <p>Location: Pune, India</p>
-    </div>
-</section>
-
-<footer>
-    <p>© 2026 Harish Bansode</p>
-</footer>
+</div>
 
 </body>
 </html>
