@@ -1,218 +1,171 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Harish | Senior Full Stack Developer</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harish Bansode | Full Stack Developer</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #0f172a;
+            color: #e2e8f0;
+        }
 
-<style>
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
-}
+        header {
+            background: #020617;
+            padding: 20px;
+            text-align: center;
+        }
 
-body {
-  background: linear-gradient(135deg, #020617, #0f172a);
-  color: #e2e8f0;
-}
+        header h1 {
+            margin: 0;
+            color: #38bdf8;
+        }
 
-/* NAVBAR */
-nav {
-  display: flex;
-  justify-content: space-between;
-  padding: 20px 40px;
-  position: sticky;
-  top: 0;
-  background: rgba(2,6,23,0.7);
-  backdrop-filter: blur(10px);
-}
+        nav {
+            text-align: center;
+            margin-top: 10px;
+        }
 
-nav a {
-  color: #38bdf8;
-  margin-left: 20px;
-  text-decoration: none;
-}
+        nav a {
+            color: #94a3b8;
+            margin: 0 15px;
+            text-decoration: none;
+        }
 
-/* HERO */
-.hero {
-  text-align: center;
-  padding: 100px 20px;
-}
+        nav a:hover {
+            color: #38bdf8;
+        }
 
-.hero h1 {
-  font-size: 48px;
-}
+        section {
+            padding: 40px;
+            max-width: 900px;
+            margin: auto;
+        }
 
-.hero span {
-  color: #38bdf8;
-}
+        h2 {
+            color: #38bdf8;
+        }
 
-.hero p {
-  margin-top: 15px;
-  color: #94a3b8;
-}
+        .card {
+            background: #020617;
+            padding: 20px;
+            margin: 15px 0;
+            border-radius: 10px;
+        }
 
-/* BUTTON */
-.btn {
-  display: inline-block;
-  margin-top: 25px;
-  padding: 12px 25px;
-  background: #38bdf8;
-  color: black;
-  border-radius: 25px;
-  text-decoration: none;
-  font-weight: bold;
-}
+        .skills span {
+            display: inline-block;
+            background: #1e293b;
+            padding: 8px 12px;
+            margin: 5px;
+            border-radius: 5px;
+        }
 
-/* SECTIONS */
-section {
-  padding: 60px 20px;
-  max-width: 1100px;
-  margin: auto;
-}
-
-h2 {
-  margin-bottom: 30px;
-  color: #38bdf8;
-}
-
-/* CARDS */
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
-  gap: 20px;
-}
-
-.card {
-  background: rgba(30,41,59,0.6);
-  padding: 20px;
-  border-radius: 15px;
-  backdrop-filter: blur(10px);
-  transition: 0.3s;
-}
-
-.card:hover {
-  transform: translateY(-5px);
-}
-
-/* SKILLS */
-.skills span {
-  display: inline-block;
-  margin: 5px;
-  padding: 8px 12px;
-  background: #1e293b;
-  border-radius: 5px;
-}
-
-/* FOOTER */
-footer {
-  text-align: center;
-  padding: 20px;
-  color: #64748b;
-}
-</style>
-
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #020617;
+            margin-top: 40px;
+        }
+    </style>
 </head>
 
 <body>
 
-<!-- NAVBAR -->
+<header>
+    <h1>Harish Bansode</h1>
+    <p>Senior Full Stack Developer | MEAN Stack | DevOps | AWS</p>
 
-<nav>
-  <h3>Harish</h3>
-  <div>
-    <a href="#about">About</a>
-    <a href="#projects">Projects</a>
-    <a href="#contact">Contact</a>
-  </div>
-</nav>
-
-<!-- HERO -->
-
-<div class="hero">
-  <h1>Hi, I'm <span>Harish</span> 👋</h1>
-  <h3>Senior Full Stack Developer</h3>
-  <p>10+ Years | MEAN Stack | AWS | DevOps</p>
-  <a class="btn" href="#projects">View My Work</a>
-</div>
-
-<!-- ABOUT -->
+    <nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
 
 <section id="about">
-  <h2>About Me</h2>
-  <p>
-    Experienced Full Stack Developer with 10+ years in building scalable applications.
-    Expertise in Angular, Node.js, AWS, and system design. Passionate about performance,
-    cloud deployment, and clean architecture.
-  </p>
+    <h2>About Me</h2>
+    <div class="card">
+        <p>
+            I am a Full Stack Developer with 10+ years of experience building scalable applications.
+            I specialize in MEAN stack development, cloud deployment, and performance optimization.
+        </p>
+        <p>
+            Currently working on SGUI and NLM applications with strong expertise in backend systems,
+            DevOps pipelines, and cloud infrastructure.
+        </p>
+    </div>
 </section>
 
-<!-- SKILLS -->
-
-<section>
-  <h2>Skills</h2>
-  <div class="skills">
-    <span>Angular</span>
-    <span>React</span>
-    <span>Node.js</span>
-    <span>TypeScript</span>
-    <span>MongoDB</span>
-    <span>Docker</span>
-    <span>AWS</span>
-    <span>CI/CD</span>
-  </div>
+<section id="skills">
+    <h2>Skills</h2>
+    <div class="card skills">
+        <span>Node.js</span>
+        <span>Express.js</span>
+        <span>Angular</span>
+        <span>React</span>
+        <span>TypeScript</span>
+        <span>JavaScript</span>
+        <span>MongoDB</span>
+        <span>Docker</span>
+        <span>AWS</span>
+        <span>NGINX</span>
+        <span>PM2</span>
+        <span>GraphQL</span>
+        <span>RabbitMQ</span>
+    </div>
 </section>
-
-<!-- PROJECTS -->
 
 <section id="projects">
-  <h2>Projects</h2>
-  <div class="grid">
+    <h2>Projects</h2>
 
-```
-<div class="card">
-  <h3>📊 Stock Option App</h3>
-  <p>Angular + Node.js app deployed on AWS (App Runner, S3, CloudFront)</p>
-  <a href="https://github.com/HarishPB16">GitHub</a>
-</div>
+    <div class="card">
+        <h3>SGUI Application</h3>
+        <p>
+            Developed UI for TV guide and VOD systems using JavaScript.
+            Integrated TTS features and optimized performance.
+        </p>
+    </div>
 
-<div class="card">
-  <h3>📺 SGUI Platform</h3>
-  <p>Video metadata system built using Vanilla JS with performance optimizations</p>
-</div>
-```
+    <div class="card">
+        <h3>NLM Application</h3>
+        <p>
+            MEAN stack application for managing channel logos.
+            Built scalable APIs and UI components.
+        </p>
+    </div>
 
-  </div>
+    <div class="card">
+        <h3>RoboInvest</h3>
+        <p>
+            Stock analysis application using Python Flask and financial APIs.
+        </p>
+    </div>
+
+    <div class="card">
+        <h3>DevOps Setup</h3>
+        <p>
+            Implemented Docker, PM2 clustering, GitHub Actions CI/CD, and AWS deployment.
+        </p>
+    </div>
+
 </section>
-
-<!-- AWS -->
-
-<section>
-  <h2>AWS Deployment</h2>
-  <div class="grid">
-    <div class="card">App Runner (Backend)</div>
-    <div class="card">ECR (Docker Images)</div>
-    <div class="card">S3 (Frontend Hosting)</div>
-    <div class="card">CloudFront (CDN + HTTPS)</div>
-    <div class="card">GitHub Actions (CI/CD)</div>
-  </div>
-</section>
-
-<!-- CONTACT -->
 
 <section id="contact">
-  <h2>Contact</h2>
-  <p>Email: your-email@gmail.com</p>
-  <p>GitHub: <a href="https://github.com/HarishPB16">HarishPB16</a></p>
+    <h2>Contact</h2>
+    <div class="card">
+        <p>Email: your-email@gmail.com</p>
+        <p>GitHub: https://github.com/your-username</p>
+        <p>Location: Pune, India</p>
+    </div>
 </section>
 
 <footer>
-  © 2026 Harish | Built with ❤️
+    <p>© 2026 Harish Bansode</p>
 </footer>
 
 </body>
