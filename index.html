@@ -1,11 +1,219 @@
 <!DOCTYPE html>
-<html>
+
+<html lang="en">
 <head>
-    <title>Harish Portfolio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Harish | Senior Full Stack Developer</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #020617, #0f172a);
+  color: #e2e8f0;
+}
+
+/* NAVBAR */
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 40px;
+  position: sticky;
+  top: 0;
+  background: rgba(2,6,23,0.7);
+  backdrop-filter: blur(10px);
+}
+
+nav a {
+  color: #38bdf8;
+  margin-left: 20px;
+  text-decoration: none;
+}
+
+/* HERO */
+.hero {
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.hero h1 {
+  font-size: 48px;
+}
+
+.hero span {
+  color: #38bdf8;
+}
+
+.hero p {
+  margin-top: 15px;
+  color: #94a3b8;
+}
+
+/* BUTTON */
+.btn {
+  display: inline-block;
+  margin-top: 25px;
+  padding: 12px 25px;
+  background: #38bdf8;
+  color: black;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* SECTIONS */
+section {
+  padding: 60px 20px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+h2 {
+  margin-bottom: 30px;
+  color: #38bdf8;
+}
+
+/* CARDS */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+  gap: 20px;
+}
+
+.card {
+  background: rgba(30,41,59,0.6);
+  padding: 20px;
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* SKILLS */
+.skills span {
+  display: inline-block;
+  margin: 5px;
+  padding: 8px 12px;
+  background: #1e293b;
+  border-radius: 5px;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 20px;
+  color: #64748b;
+}
+</style>
+
 </head>
+
 <body>
-    <h1>Welcome to Harish's GitHub Page 🚀</h1>
-    <p>This is my portfolio.</p>
-    <h1>Updated</h1>
+
+<!-- NAVBAR -->
+
+<nav>
+  <h3>Harish</h3>
+  <div>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+
+<div class="hero">
+  <h1>Hi, I'm <span>Harish</span> 👋</h1>
+  <h3>Senior Full Stack Developer</h3>
+  <p>10+ Years | MEAN Stack | AWS | DevOps</p>
+  <a class="btn" href="#projects">View My Work</a>
+</div>
+
+<!-- ABOUT -->
+
+<section id="about">
+  <h2>About Me</h2>
+  <p>
+    Experienced Full Stack Developer with 10+ years in building scalable applications.
+    Expertise in Angular, Node.js, AWS, and system design. Passionate about performance,
+    cloud deployment, and clean architecture.
+  </p>
+</section>
+
+<!-- SKILLS -->
+
+<section>
+  <h2>Skills</h2>
+  <div class="skills">
+    <span>Angular</span>
+    <span>React</span>
+    <span>Node.js</span>
+    <span>TypeScript</span>
+    <span>MongoDB</span>
+    <span>Docker</span>
+    <span>AWS</span>
+    <span>CI/CD</span>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+
+<section id="projects">
+  <h2>Projects</h2>
+  <div class="grid">
+
+```
+<div class="card">
+  <h3>📊 Stock Option App</h3>
+  <p>Angular + Node.js app deployed on AWS (App Runner, S3, CloudFront)</p>
+  <a href="https://github.com/HarishPB16">GitHub</a>
+</div>
+
+<div class="card">
+  <h3>📺 SGUI Platform</h3>
+  <p>Video metadata system built using Vanilla JS with performance optimizations</p>
+</div>
+```
+
+  </div>
+</section>
+
+<!-- AWS -->
+
+<section>
+  <h2>AWS Deployment</h2>
+  <div class="grid">
+    <div class="card">App Runner (Backend)</div>
+    <div class="card">ECR (Docker Images)</div>
+    <div class="card">S3 (Frontend Hosting)</div>
+    <div class="card">CloudFront (CDN + HTTPS)</div>
+    <div class="card">GitHub Actions (CI/CD)</div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+
+<section id="contact">
+  <h2>Contact</h2>
+  <p>Email: your-email@gmail.com</p>
+  <p>GitHub: <a href="https://github.com/HarishPB16">HarishPB16</a></p>
+</section>
+
+<footer>
+  © 2026 Harish | Built with ❤️
+</footer>
+
 </body>
 </html>
